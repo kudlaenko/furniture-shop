@@ -1,0 +1,28 @@
+.sort-field {
+  position: relative;
+  display: flex;
+  width: 288px;
+  border-radius: 20px;
+  border: 1px solid rgba(196, 196, 196, 1);
+
+  select {
+    flex: 1;
+    padding: 10px 14px;
+    cursor: pointer;
+  }
+
+  &::after {
+    content: url('../../assets/icons/arrow.svg');
+    position: absolute;
+    width: 20px;
+    height: 10.2px;
+    right: 14px;
+    top: 10px;
+    pointer-events: none;
+  }
+
+  &:hover::after {
+    color: #f39c12;
+    animation: bounce 0.5s infinite;
+  }
+}

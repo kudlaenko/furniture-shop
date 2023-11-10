@@ -1,0 +1,14 @@
+.catalog-page {
+  display: flex;
+  flex-direction: column;
+  padding: 32px 0;
+
+  &__sort-wrapper {
+    align-self: flex-end;
+    margin-bottom: 35px;
+
+    @media (max-width: 750px) {
+      margin-right: 25px;
+    }
+  }
+}
